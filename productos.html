@@ -1,0 +1,75 @@
+<!-- ===================== PRODUCTOS.HTML ===================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>🥐 PANADERIA VICTORIA </h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <h2 class="titulo">🥖 Panes</h2>
+    <div class="productos">
+        <div class="card">
+            <img src="imagen/marraquetas.jpg">
+            <h3>Marraquetas</h3>
+            <button onclick="comprar('Pan Marraqueta')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagen/pandulce.png">
+            <h3>Pan Dulce</h3>
+            <button onclick="comprar('Pan Dulce')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="imagen/frances.png">
+            <h3>Pan Francés</h3>
+            <button onclick="comprar('Pan francés')">Comprar</button>
+        </div>
+    </div>
+
+
+<h2 class="titulo">🎂 Pasteles</h2>
+<div class="productos">
+    <div class="card">
+        <img src="imagen/tortachocolate.png">
+        <h3>Pastel de Chocolate</h3>
+        <button onclick="comprar('Pastel')">Comprar</button>
+    </div>
+
+    <div class="card">
+        <img src="imagen/torta.png">
+        <h3>Paste</h3>
+        <button onclick="comprar('Pastel')">Comprar</button>
+    </div>
+
+</div>
+
+    <script>
+    function comprar(nombre){
+        Swal.fire({
+            title: '¿Cantidad?',
+            input: 'number',
+            inputPlaceholder: 'Ej: 2'
+        }).then((result)=>{
+            if(result.value){
+                Swal.fire('Agregado', result.value + ' ' + nombre + ' agregados 🛒','success');
+            }
+        });
+    }
+    </script>
+
+</body>
+</html>

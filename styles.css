@@ -1,0 +1,188 @@
+/* ESTILOS DE CABECERA TITULOS ETC */
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:50px;
+    background:#f4a261;
+}
+
+.productos{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    border:1px solid #ccc;
+    margin:10px;
+    padding:10px;
+    width:250px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+img {
+    width: 100%;
+    height: 200px;       /* todas mismas altura */
+    object-fit: cover;   /* recorta sin deformar */
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .productos{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+/* POCICIOS Y TAMAÑO GALERÍA */
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.img-box {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img-box img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* EFECTO DE LAS IMAGENES EN INDEX*/
+.img-box:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+/* estilo pagina nosotros */
+.nosotros {
+    padding: 40px;
+    background: #fff8f0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contenedor-nosotros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-nosotros {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-nosotros:hover {
+    transform: translateY(-10px);
+}
+
+.card-nosotros h3 {
+    margin-bottom: 10px;
+    color: #e76f51;
+}
+.card-nosotros {
+    border-top: 5px solid #f4a261;
+}
+
+.contacto {
+    text-align: center;
+    padding: 40px;
+}
+/* estolo hoja contacto */
+.formulario {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    padding: 10px;
+    background: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.grupo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grupo label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.grupo input,
+.grupo textarea {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

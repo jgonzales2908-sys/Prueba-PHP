@@ -1,0 +1,70 @@
+<!-- ===================== INDEX.HTML ===================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANADERIA VICTORIA</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+    <body>
+        <!--Menu de paginas-->
+        <header> 
+            <h1>🥐 PANADERIA VICTORIA </h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <!--Cabecera de Bienbenida-->
+        <section class="hero">
+            <h2>Bienvenido a nuestra panadería</h2>
+             <p>Disfruta nuestros productos artesanales</p>
+            <button onclick="bienvenida()">Ver oferta</button>
+        </section>
+
+        <!--Imagenes de pagina de inicio-->
+        <section class="galeria">
+            <div class="img-box">
+                <img src="imagen/pandulce.png" alt="Pan">
+            </div>
+
+            <div class="img-box">
+                <img src="imagen/tortachocolate.png" alt="Pastel">
+            </div>
+
+            <div class="img-box">
+                <img src="imagen/empanadas.png" alt="Galleta">
+            </div>
+        </section>
+
+        <!--Boton de oferta-->
+        
+        <script>
+
+        function bienvenida(){
+
+            Swal.fire({
+                title: 'Bienvenido a PANADERIA VICTORIA',
+                text: 'Disfruta nuestras ofertas especiales',
+                imageUrl: "imagen/pandulce.png",
+                imageHeight: 300,
+                imageAlt: "A tall image",
+          
+            } );
+        }
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
